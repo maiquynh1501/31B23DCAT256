@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="win">
-	<%@include file="header.jsp"%>
+	<%@include file="../header.jsp"%>
 	<div class="ttl">Đăng nhập nhân viên quản lý</div>
 	<div class="c">
 		<%
@@ -31,7 +31,7 @@
 			<div class="row"><label>Mật khẩu (*):</label><input class="in" type="password" name="inPassword" id="inPassword" required /></div>
 			<div class="row"><label></label>
 				<input class="btn ok" type="submit" name="subLogin" id="subLogin" value="Đăng nhập" />
-				<button type="button" class="btn cancel" onclick="openPage('index.jsp')">Hủy</button>
+				<button type="button" class="btn cancel" onclick="openPage('../index.jsp')">Hủy</button>
 			</div>
 		</form>
 	</div>

@@ -8,7 +8,7 @@
 	StaffDAO6 dao = new StaffDAO6();
 	if (dao.checkLogin(staff)) { // đúng: lưu nhân viên vào session, các trang quản lý đọc lại để biết đã đăng nhập
 		session.setAttribute("management", staff);
-		response.sendRedirect("management/ManagementMainView6.jsp");
+		response.sendRedirect("../managementstaff/ManagementMainView6.jsp");
 	} else { // sai: quay lại trang đăng nhập kèm thông báo
 		response.sendRedirect("LoginView6.jsp?err=fail");
 	}

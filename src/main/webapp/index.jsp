@@ -14,7 +14,7 @@
 		<%-- trang đầu: chọn vào phần khách hàng hoặc đăng nhập nhân viên --%>
 		<div class="menu">
 			<button class="btn pri" onclick="openPage('customer/CustomerMainView6.jsp')">Khách hàng – Đặt lịch hẹn</button>
-			<button class="btn gray" onclick="openPage('LoginView6.jsp')">Nhân viên – Đăng nhập</button>
+			<button class="btn gray" onclick="openPage('staff/LoginView6.jsp')">Nhân viên – Đăng nhập</button>
 		</div>
 	</div>
 </div>

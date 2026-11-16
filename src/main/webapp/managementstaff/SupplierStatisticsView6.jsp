@@ -4,7 +4,7 @@
 	// Lấy nhân viên quản lý đã đăng nhập; chưa đăng nhập (hoặc hết phiên) -> về trang đăng nhập
 	ManagementStaff6 manager = (ManagementStaff6) session.getAttribute("management");
 	if (manager == null) {
-		response.sendRedirect("../LoginView6.jsp?err=timeout");
+		response.sendRedirect("../staff/LoginView6.jsp?err=timeout");
 		return;
 	}
 

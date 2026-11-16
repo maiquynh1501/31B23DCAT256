@@ -17,8 +17,9 @@ GarageManagement/
 │  └─ dao/                     lớp DAO (DAO6 giữ kết nối dùng chung)
 ├─ src/main/webapp/
 │  ├─ customer/                trang JSP module Book an Appointment Online 6
-│  ├─ management/              trang JSP module View Supplier Statistics 6
-│  ├─ LoginView6.jsp, doLogin6.jsp, doLogout6.jsp, header.jsp, index.jsp
+│  ├─ managementstaff/         trang JSP module View Supplier Statistics 6
+│  ├─ staff/                   trang đăng nhập, đăng xuất
+│  ├─ header.jsp, index.jsp
 │  └─ WEB-INF/web.xml
 └─ pom.xml
 ```

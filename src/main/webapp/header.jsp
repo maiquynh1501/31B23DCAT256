@@ -58,14 +58,14 @@ a{color:#0645ad;text-decoration:underline;cursor:pointer}
 <%
 	// Lời chào: trang quản lý đã đăng nhập thì chào tên quản lý, trang khách hàng thì chào Quý khách
 	model.ManagementStaff6 hdrManager = (model.ManagementStaff6) session.getAttribute("management");
-	boolean hdrManagerPage = request.getRequestURI().contains("/management/");
+	boolean hdrManagerPage = request.getRequestURI().contains("/managementstaff/");
 	String hdrCtx = request.getContextPath();
 %>
 <div class="top">
 	<b>GARAGE ABC</b>
 	<span>
 	<% if (hdrManagerPage && hdrManager != null) { %>
-		Xin chào, Quản lý <u><%=esc(hdrManager.getFullName())%></u> &nbsp;|&nbsp; <a href="<%=hdrCtx%>/doLogout6.jsp">Đăng xuất</a>
+		Xin chào, Quản lý <u><%=esc(hdrManager.getFullName())%></u> &nbsp;|&nbsp; <a href="<%=hdrCtx%>/staff/doLogout6.jsp">Đăng xuất</a>
 	<% } else { %>
 		Xin chào, Quý khách &nbsp;|&nbsp; <a href="<%=hdrCtx%>/index.jsp">Trang chủ</a>
 	<% } %>
